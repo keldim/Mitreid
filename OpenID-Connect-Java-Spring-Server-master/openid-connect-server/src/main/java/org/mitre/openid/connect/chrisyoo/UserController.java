@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-//http://campania-pizza-client.s3-website.us-east-2.amazonaws.com
+//http://campania-pizza-client.s3-website.us-east-2.amazonaws.com     http://match-point-tennis-client.s3-website.us-east-2.amazonaws.com
 //, methods = {RequestMethod.GET, RequestMethod.POST}, allowedHeaders = "*"
+// 'stay logged in' removed => git commit message for mitre
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 public class UserController {
@@ -31,7 +32,7 @@ public class UserController {
 
 //	@PostMapping("/add-user")
 	@RequestMapping(value = "/add-user", method = RequestMethod.GET)
-	public @ResponseBody String addUser(HttpServletRequest request) {
+	public @ResponseBody boolean addUser(HttpServletRequest request) {
 		
 		
 		User newUser = new User(request.getHeader("username"), request.getHeader("password"), Integer.parseInt(request.getHeader("enabled")));
@@ -65,7 +66,7 @@ public class UserController {
 		
 		// create dao and service for authorities, try to login again
 		
-		return "user added";
+		return true;
     }
 	
 //	@PostMapping(value = "/username-duplicate")
