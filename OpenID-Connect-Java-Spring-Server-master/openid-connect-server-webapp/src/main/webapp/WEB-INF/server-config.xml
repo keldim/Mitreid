@@ -33,9 +33,10 @@
 	<bean id="configBean" class="org.mitre.openid.connect.config.ConfigurationPropertiesBean">
 	    
 	    <!-- This property sets the root URL of the server, known as the issuer -->
-		<property name="issuer" value="http://localhost:8080/openid-connect-server-webapp/" />
-		<!-- http://new-mitreid-env.eba-ppwpqerk.us-east-2.elasticbeanstalk.com/ -->
-		<!-- http://mitre-id-server.eba-qjffpfif.us-east-2.elasticbeanstalk.com/ -->
+		<property name="issuer" value="https://www.mitreid-backend.com/" />
+		<!-- https://mitreid-secured.eba-k7qcnu89.us-east-1.elasticbeanstalk.com/ -->
+		<!-- http://localhost:8080/openid-connect-server-webapp/ -->
+		<!-- do not add 'openid-connect-server-webapp' for production url -->
 		
 		<!-- This property is a URL pointing to a logo image 24px high to be used in the top bar -->
  		<property name="logoImageUrl" value="resources/images/openid_connect_small.png" />
@@ -47,7 +48,7 @@
 		<!-- <property name="regTokenLifeTime" value="172800" /> -->
 		
 		<!-- This property forces the issuer value to start with "https", recommended on production servers -->
-		<!-- <property name="forceHttps" value="true" /> -->
+		<property name="forceHttps" value="true" />
 		
 		<!-- This property sets the locale for server text -->
 		<!-- <property name="locale" value="sv" /> -->

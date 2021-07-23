@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+    <Valve className="org.apache.catalina.valves.RemoteIpValve"
+           remoteIpHeader="52.201.125.167"
+           protocolHeader="https"
+           portHeader="443"
+           internalProxies="..."
+/>
+</Context>

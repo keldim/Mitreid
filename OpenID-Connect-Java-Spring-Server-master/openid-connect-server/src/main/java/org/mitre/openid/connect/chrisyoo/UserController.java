@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-//http://campania-pizza-client.s3-website.us-east-2.amazonaws.com     http://match-point-tennis-client.s3-website.us-east-2.amazonaws.com
+//http://localhost:4200
 //, methods = {RequestMethod.GET, RequestMethod.POST}, allowedHeaders = "*"
 // 'stay logged in' removed => git commit message for mitre
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = {"https://www.cy-match-point-tennis.com", "https://www.cy-campania-pizza.com"})
 @RestController
 public class UserController {
 

@@ -43,12 +43,11 @@
 		<property name="driverClassName"
 			value="com.mysql.jdbc.Driver" />
 		<property name="jdbcUrl"
-			value="jdbc:mysql://127.0.0.1:3306/mitre-openid-connect?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
-			<!-- jdbc:mysql://new-portfolio-database.cunqexssas50.us-east-2.rds.amazonaws.com:3306/mitre-openid-connect?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC -->
-			<!-- jdbc:mysql://portfolio-db.cunqexssas50.us-east-2.rds.amazonaws.com:3306/ -->
-		<property name="username" value="mitre-openid-connect" />
+			value="jdbc:mysql://portfolio-rds.cwpuccyycnks.us-east-1.rds.amazonaws.com:3306/mitre-openid-connect?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC" />
+			<!-- jdbc:mysql://127.0.0.1:3306/mitre-openid-connect?useSSL=false&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC -->
+		<property name="username" value="" />
 		<!-- admin -->
-		<property name="password" value="mitre-55555" />
+		<property name="password" value="" />
 		<!-- sef1550rt -->
 	</bean>
 
